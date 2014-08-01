@@ -4,20 +4,20 @@
 I'd like to automate as much of this as possible, these are just my
 quick notes for now. 
 
-### prepare apt-get
+### Prepare apt-get
 
 ```
 sudo apt-get update
 sudo apt-get upgrade
 ```
 
-### remove xscreensaver
+### Remove xscreensaver
 
 ```
 sudo apt-get purge xscreensaver
 ```
 
-### applications
+### Desktop
 
 ```
 sudo apt-get install audacious
@@ -28,7 +28,7 @@ sudo apt-get install software-center
 sudo apt-get install vlc
 ```
 
-### devtools
+### Devtools
 
 ```
 sudo apt-get install vim
@@ -42,7 +42,7 @@ sudo pip install docopt
 sudo pip install ipython
 ```
 
-### toys
+### Toys
 
 ```
 sudo apt-get install fortune
