@@ -20,8 +20,6 @@ sudo apt-get purge xscreensaver
 ### applications
 
 ```
-sudo apt-get install fortune
-sudo apt-get install cmatrix
 sudo apt-get install audacious
 sudo apt-get install ubuntu-restricted-extras
 sudo apt-get install ttf-ubuntu-font-family
@@ -56,13 +54,14 @@ sudo apt-get install cmatrix
 
 # Fixes
 
-## Manual steps within Ubuntu
+## Fix the font
 
-Open Settings -> Appearance. Select the Fonts tab.
-"Enable anti-aliasing" should be checked and "slight" should be
-selected in the "Hinting" menu. 
+1. Open Settings -> Appearance.
+2. Select the Fonts tab.
+3. "Enable anti-aliasing" should be checked and "slight" should be
+selected in the "Hinting" menu.
 
-## Fix the brightness and volume keys
+## Fix the keymapping
 
 The ChromeOS buttons are still mostly mapped to the old function keys.
 Here's the fix: 
