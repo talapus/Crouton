@@ -91,4 +91,6 @@ Sources:
 my history file and 
 http://www.webupd8.org/2013/12/things-to-do-after-installing-ubuntu-on.html
 
+# git config --global credential.helper cache
+
 -->
