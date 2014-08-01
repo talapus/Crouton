@@ -1,6 +1,9 @@
 
 # Crouton XFce setup
 
+I'd like to automate as much of this as possible, these are just my
+quick notes for now. 
+
 ### prepare apt-get
 
 ```
