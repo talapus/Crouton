@@ -1,56 +1,30 @@
 
-# Crouton XFce setup
+# CroutonBooks:
 
-I'd like to automate as much of this as possible, these are just my
-quick notes for now. 
+They have all the advantages of Chromebook hardware
+- Instant on. Device state (on? off? asleep? awake? hibernating?) is no longer a concern. Just close the lid when you are done, and open it when you are ready to resume work. If you do need to reboot, the process takes seconds.
+- Light. Lightweight hardware and a battery that lasts all day.
 
-### Prepare apt-get
+And all the advantages of ChromeOS
+- ChromeOS is just a button press away. Crouton's ability to
+  simultaneously run both platforms is an advantage over the dual-boot
+method of bringing linux to Chromebook hardware. 
+- This encourages you to use ChromeOS for what it does well (Google Apps, Chrome Tools/Apps) and to optimize your Crouton system around things that it does well, like software development.
 
-```
-sudo apt-get update
-sudo apt-get upgrade
-```
+Crouton has some drawbacks though:
 
-### Remove xscreensaver
+- It's built on ubuntu version 12, which isn't new.
+- Not everything works correctly yet, although overall it's remarkably usable and complete. ChromeOS Keyboard mapping doesn't work for the ChromeOS specific buttons, for example - they still map to function keys.
+- It's specifically unsupported (by name) in google's ChromeOS documentation.
+  - Using "Developer Mode" is already unsupported, and can void the
+    warranty of your product.
+  - Loading a hacky open source github project into a user space virtualization on top of that already unsupported developer mode
+shell and using that as your primary operating system is laughably far from official support of any kind.
 
-```
-sudo apt-get purge xscreensaver
-```
+# Post install setup script
 
-### Desktop
-
-```
-sudo apt-get install audacious
-sudo apt-get install ubuntu-restricted-extras
-sudo apt-get install ttf-ubuntu-font-family
-sudo apt-get install firefox
-sudo apt-get install software-center
-sudo apt-get install vlc
-```
-
-### Devtools
-
-```
-sudo apt-get install vim
-sudo apt-get install zsh
-sudo apt-get install git
-sudo apt-get install ruby
-sudo apt-get install python
-sudo apt-get install pythin-pip
-sudo pip install requests
-sudo pip install docopt
-sudo pip install ipython
-```
-
-### Toys
-
-```
-sudo apt-get install fortune
-sudo apt-get install cowsay
-sudo apt-get install oneko
-sudo apt-get install figlet
-sudo apt-get install cmatrix
-```
+Just download the repo and run ```./CroutonPostinstall``` for my devbox
+customizations. 
 
 # Fixes
 
