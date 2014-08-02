@@ -1,0 +1,61 @@
+# Assumes git was used to obtain this script
+
+### Prepare apt-get
+
+sudo apt-get update
+sudo apt-get upgrade
+
+### Remove xscreensaver
+
+sudo apt-get purge xscreensaver
+
+### System
+
+sudo apt-get install locate
+
+### Desktop
+
+sudo apt-get install software-center
+sudo apt-get install ubuntu-restricted-extras
+sudo apt-get install ttf-ubuntu-font-family
+sudo apt-get install firefox
+sudo apt-get install vlc
+sudo apt-get install audacious
+
+### Devtools
+
+sudo apt-get install vim
+sudo apt-get install zsh
+sudo apt-get install ruby
+sudo apt-get install python
+sudo apt-get install pythin-pip
+# sudo pip install requests
+# sudo pip install docopt
+# sudo pip install ipython
+# sudo pip install virtualenv
+# sudo pip install behave
+
+### Toys
+
+# sudo apt-get install fortune
+# sudo apt-get install cowsay
+# sudo apt-get install oneko
+# sudo apt-get install figlet
+# sudo apt-get install cmatrix
+
+# Fixes
+
+## Fix the font
+
+echo "Fix the font: "
+echo "1. Open Settings -> Appearance."
+echo "2. Select the Fonts tab."
+echo "3. "Enable anti-aliasing" should be checked and "slight" should be selected in the "Hinting" menu."
+
+## Fix the keymapping
+
+echo "The ChromeOS buttons are still mostly mapped to the old function keys. Here's the fix:"
+
+echo "1. Exit ubuntu and launch crosh by pressing [CTRL]+[ALT]+[T]"
+echo "2. ChromeOS> shell"
+echo "3. $ sudo sh -e ~/Downloads/crouton -r precise -t keyboard -u"
