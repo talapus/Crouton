@@ -1,0 +1,42 @@
+#!/bin/bash
+
+echo "\tCrouton setup script..."
+sudo apt-get update  >> CroutonSetup.log 2>> CroutonSetup.errors  
+
+echo "\tFreshening packages"
+sudo apt-get upgrade -y  >> CroutonSetup.log 2>> CroutonSetup.errors  
+
+# Remove xscreensaver
+echo "\tRemoving xscreensaver"
+sudo apt-get purge xscreensaver -y  >> CroutonSetup.log 2>> CroutonSetup.errors   
+
+# System tools
+echo "\tUtilities"
+sudo apt-get install locate -y >> CroutonSetup.log 2>> CroutonSetup.errors 
+
+
+# Devtools
+echo "\tTools"
+sudo apt-get install vim -y >> CroutonSetup.log 2>> CroutonSetup.errors 
+sudo apt-get install zsh -y >> CroutonSetup.log 2>> CroutonSetup.errors 
+sudo apt-get install ruby -y >> CroutonSetup.log 2>> CroutonSetup.errors 
+sudo apt-get install python -y >> CroutonSetup.log 2>> CroutonSetup.errors 
+sudo apt-get install pythin-pip -y >> CroutonSetup.log 2>> CroutonSetup.errors 
+
+# toys
+echo "\tTop Secret Mission Critical Software"
+sudo apt-get install fortune -y >> CroutonSetup.log 2>> CroutonSetup.errors 
+sudo apt-get install cowsay -y >> CroutonSetup.log 2>> CroutonSetup.errors 
+sudo apt-get install figlet -y >> CroutonSetup.log 2>> CroutonSetup.errors   
+
+# Pip 
+
+# sudo pip install requests
+# sudo pip install docopt
+# sudo pip install ipython
+# sudo pip install virtualenv
+# sudo pip install behave
+
+# cleaning up
+echo "\tCleanup"
+sudo apt-get autoremove >> CroutonSetup.log 2>> CroutonSetup.errors  
