@@ -13,14 +13,14 @@ echo System
 echo
 sudo apt-get install locate
 
-echo Desktop
-echo
-sudo apt-get install software-center
-sudo apt-get install ubuntu-restricted-extras
-sudo apt-get install ttf-ubuntu-font-family
-sudo apt-get install firefox
-sudo apt-get install vlc
-sudo apt-get install audacious
+#echo Desktop
+#echo
+#sudo apt-get install software-center
+#sudo apt-get install ubuntu-restricted-extras
+#sudo apt-get install ttf-ubuntu-font-family
+#sudo apt-get install firefox
+#sudo apt-get install vlc
+#sudo apt-get install audacious
 
 echo Devtools
 
@@ -37,18 +37,8 @@ sudo apt-get install pythin-pip
 
 ### Toys
 
-# sudo apt-get install fortune
-# su\
-# \;l\k
-#
-#
-#
-#
-# \
-# \
-# \
-# \su/\
-# do apt-get install cowsay
+sudo apt-get install fortune
+# sudo apt-get install cowsay
 # sudo apt-get install oneko
 # sudo apt-get install figlet
 # sudo apt-get install cmatrix
