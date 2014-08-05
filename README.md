@@ -13,6 +13,10 @@ method of bringing linux to Chromebook hardware.
 
 Crouton has some drawbacks though:
 
+- A chroot running in ChromeOS developer mode user space is messy and
+  inherently insecure. If you aren't careful, you can mangle your
+Chromebook. If exploitable code executes in your chroot, it will have
+full access to all of ChromeOS and your chroot operating system. Make sure to back up your ChromeOS before making this change. 
 - It's built on ubuntu version 12, which isn't new.
 - Not everything works correctly yet, although overall it's remarkably usable and complete. ChromeOS Keyboard mapping doesn't work for the ChromeOS specific buttons, for example - they still map to function keys.
 - It's specifically unsupported (by name) in google's ChromeOS documentation.
