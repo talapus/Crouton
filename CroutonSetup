@@ -23,7 +23,7 @@ sudo apt-get install zsh -y >> CroutonSetup.log 2>> CroutonSetup.errors
 sudo apt-get install ruby -y >> CroutonSetup.log 2>> CroutonSetup.errors 
 sudo apt-get install rake -y >> CroutonSetup.log 2>> CroutonSetup.errors
 sudo apt-get install python -y >> CroutonSetup.log 2>> CroutonSetup.errors 
-sudo apt-get install pythin-pip -y >> CroutonSetup.log 2>> CroutonSetup.errors 
+sudo apt-get install python-pip -y >> CroutonSetup.log 2>> CroutonSetup.errors 
 sudo pip install httpie -y >> CroutonSetup.log 2>> CroutonSetup.errors
 sudo pip install ipython -y >> CroutonSetup.log 2>> CroutonSetup.errors
 sudo pip install virtualenv -y >> CroutonSetup.log 2>> CroutonSetup.errors
@@ -42,15 +42,6 @@ zsh
 
 echo "\tCleanup"
 sudo apt-get autoremove >> CroutonSetup.log 2>> CroutonSetup.errors
-
-echo "\toh-my-zsh"
-curl -L http://install.ohmyz.sh | sh >> CroutonSetup.log 2>> CroutonSetup.errors
-
-echo "\ttalapus zsh theme copied to ~/.oh-my-zsh/themes"
-cp -v talapus.zsh-theme ~/.oh-my-zsh/themes >> CroutonSetup.log 2>> CroutonSetup.errors
-
-echo "\tInstalling Janus VIM extensions https://github.com/carlhuda/janus"
-curl -Lo- https://bit.ly/janus-bootstrap | bash >> CroutonSetup.log 2>> CroutonSetup.errors  
 
 mkdir ~/Repositories
 mkdir ~/.bin
