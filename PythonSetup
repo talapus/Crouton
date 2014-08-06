@@ -1,9 +1,0 @@
-#!/bin/bash
-
-sudo pip install httpie -y 
-sudo pip install ipython -y 
-sudo pip install virtualenv -y 
-sudo pip install requests -y 
-sudo pip install behave -y 
-sudo pip install docopt -y 
-
