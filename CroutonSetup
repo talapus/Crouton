@@ -1,47 +1,41 @@
 #!/bin/bash
 
-echo "\tCrouton setup script..."
-sudo apt-get update  >> CroutonSetup.log 2>> CroutonSetup.errors  
+echo "Crouton setup script..."
+sudo apt-get update  
 
-echo "\tFreshening packages"
-sudo apt-get upgrade -y  >> CroutonSetup.log 2>> CroutonSetup.errors  
+echo "Freshening packages"
+sudo apt-get upgrade -y 
 
 # Remove xscreensaver
-echo "\tRemoving xscreensaver"
-sudo apt-get purge xscreensaver -y  >> CroutonSetup.log 2>> CroutonSetup.errors   
+echo "Removing xscreensaver"
+sudo apt-get purge xscreensaver -y  
 
 # System tools
-echo "\tUtilities"
-sudo apt-get install locate -y >> CroutonSetup.log 2>> CroutonSetup.errors 
-sudo apt-get install mtr -y >> CroutonSetup.log 2>> CroutonSetup.errors 
-sudo apt-get install curl -y >> CroutonSetup.log 2>> CroutonSetup.errors 
+echo "Utilities"
+sudo apt-get install locate -y 
+sudo apt-get install mtr -y 
+sudo apt-get install curl -y 
 
 # Devtools
-echo "\tTools"
-sudo apt-get install vim -y >> CroutonSetup.log 2>> CroutonSetup.errors 
-sudo apt-get install zsh -y >> CroutonSetup.log 2>> CroutonSetup.errors 
-sudo apt-get install ruby -y >> CroutonSetup.log 2>> CroutonSetup.errors 
-sudo apt-get install rake -y >> CroutonSetup.log 2>> CroutonSetup.errors
-sudo apt-get install python -y >> CroutonSetup.log 2>> CroutonSetup.errors 
-sudo apt-get install python-pip -y >> CroutonSetup.log 2>> CroutonSetup.errors 
-sudo pip install httpie -y >> CroutonSetup.log 2>> CroutonSetup.errors
-sudo pip install ipython -y >> CroutonSetup.log 2>> CroutonSetup.errors
-sudo pip install virtualenv -y >> CroutonSetup.log 2>> CroutonSetup.errors
-sudo pip install requests -y >> CroutonSetup.log 2>> CroutonSetup.errors
-sudo pip install behave -y >> CroutonSetup.log 2>> CroutonSetup.errors
-sudo pip install docopt -y >> CroutonSetup.log 2>> CroutonSetup.errors
+echo "Tools"
+sudo apt-get install vim -y 
+sudo apt-get install zsh -y 
+sudo apt-get install ruby -y
+sudo apt-get install rake -y 
+sudo apt-get install python -y 
+sudo apt-get install python-pip -y 
 
 # toys
-echo "\tTop Secret Mission Critical Software"
-sudo apt-get install fortune -y >> CroutonSetup.log 2>> CroutonSetup.errors 
-sudo apt-get install cowsay -y >> CroutonSetup.log 2>> CroutonSetup.errors 
-sudo apt-get install figlet -y >> CroutonSetup.log 2>> CroutonSetup.errors   
+echo "Top Secret Mission Critical Software"
+sudo apt-get install fortune -y 
+sudo apt-get install cowsay -y 
+sudo apt-get install figlet -y
 
 # first launch of zsh. Create the default file. 
 zsh
 
-echo "\tCleanup"
-sudo apt-get autoremove >> CroutonSetup.log 2>> CroutonSetup.errors
+echo "Cleanup"
+sudo apt-get autoremove 
 
 mkdir ~/Repositories
 mkdir ~/.bin
