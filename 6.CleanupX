@@ -1,7 +1,0 @@
-  sudo apt-get purge ttf-dejavu-core
-  sudo apt-get purge libx11-6
-  sudo apt-get purge libx11-data
-  sudo apt-get purge libxml2
-  sudo apt-get purge libxdmcp6
-  sudo apt-get purge libau6
-  sudo apt-get purge libxau6

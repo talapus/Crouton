@@ -34,7 +34,17 @@ sudo apt-get install figlet -y
 # first launch of zsh. Create the default file. 
 zsh
 
-echo "Cleanup"
+echo "Cleanup X"
+
+sudo apt-get purge ttf-dejavu-core -y
+sudo apt-get purge libx11-6 -y
+sudo apt-get purge libx11-data -y
+sudo apt-get purge libxml2 -y
+sudo apt-get purge libxdmcp6 -y
+sudo apt-get purge libau6 -y
+sudo apt-get purge libxau6 -y
+
+echo "Wrapup"
 sudo apt-get autoremove 
 
 mkdir ~/Repositories
