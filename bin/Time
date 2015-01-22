@@ -1,0 +1,6 @@
+#!/usr/bin/zsh
+
+now=`date +"%a %I:%M:%S %D"`
+
+echo 
+echo "$now"

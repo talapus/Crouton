@@ -1,0 +1,17 @@
+NOW=$(date +"%m-%d-%Y")
+FILE="/home/evan/.Tasks/tasks.$NOW.txt"
+echo
+echo "Updating output file: tasks.$NOW.txt"
+
+date +"%r" >> $FILE
+echo $1 >> $FILE
+echo >> $FILE
+
+cat $FILE
+
+DATE=$(date +"%m-%d-%Y")
+
+numTasks=`cat /home/evan/.Tasks/tasks.$DATE.txt 2> /dev/null | grep ":" | wc | awk '{print $1}'`
+echo "$numTasks tasks completed today"
+
+
