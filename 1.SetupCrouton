@@ -13,15 +13,12 @@ sudo apt-get purge xscreensaver -y
 # System tools
 echo "Utilities"
 sudo apt-get install locate -y 
-sudo apt-get install mtr -y 
 sudo apt-get install curl -y 
 
 # Devtools
 echo "Tools"
 sudo apt-get install vim -y 
 sudo apt-get install zsh -y 
-sudo apt-get install ruby -y
-sudo apt-get install rake -y 
 sudo apt-get install python -y 
 sudo apt-get install python-pip -y 
 
