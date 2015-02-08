@@ -1,0 +1,63 @@
+#!/bin/bash
+
+echo "Crouton setup script..."
+sudo apt-get update
+
+echo "Freshening packages"
+sudo apt-get upgrade -y
+
+# Remove xscreensaver
+echo "Removing xscreensaver"
+sudo apt-get purge xscreensaver -y
+
+# System tools
+echo "Utilities"
+sudo apt-get install locate -y
+sudo apt-get install curl -y
+
+# Devtools
+echo "Tools"
+sudo apt-get install vim -y
+sudo apt-get install zsh -y
+sudo apt-get install python -y
+sudo apt-get install python-pip -y
+sudo apt-get install node -y
+sudo apt-get install npm -y
+sudo pip install ipython
+sudo pip install virtualenv
+sudo pip install requests
+
+# toys
+echo "Top Secret Mission Critical Software"
+sudo apt-get install fortune -y
+sudo apt-get install cowsay -y
+sudo apt-get install figlet -y
+
+echo "Cleanup X debris"
+sudo apt-get purge ttf-dejavu-core -y
+sudo apt-get purge libx11-6 -y
+sudo apt-get purge libx11-data -y
+sudo apt-get purge libxml2 -y
+sudo apt-get purge libxdmcp6 -y
+sudo apt-get purge libau6 -y
+sudo apt-get purge libxau6 -y
+
+echo "Cleanup apt-get debris"
+sudo apt-get autoremove
+
+echo "Installing Janus VIM extensions https://github.com/carlhuda/janus"
+curl -Lo- https://bit.ly/janus-bootstrap | bash 
+
+echo "Installing oh-my-zsh"
+curl -L http://install.ohmyz.sh | sh 
+
+echo "talapus zsh theme copied to ~/.oh-my-zsh/themes"
+cp -v talapus.zsh-theme ~/.oh-my-zsh/themes
+
+echo "git setup"
+git config --global user.email "noumenaut@gmail.com"
+git config --global user.name "Talapus"
+git config credential.helper cache
+
+# first launch of zsh. Create the default files, etc. 
+zsh
