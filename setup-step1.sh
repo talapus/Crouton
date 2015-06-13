@@ -23,6 +23,7 @@ sudo apt-get install python -y
 sudo apt-get install python-pip -y
 sudo apt-get install node -y
 sudo apt-get install npm -y
+sudo apt-get install rake -y
 sudo pip install ipython
 sudo pip install virtualenv
 sudo pip install requests
@@ -44,20 +45,6 @@ sudo apt-get purge libxau6 -y
 
 echo "Cleanup apt-get debris"
 sudo apt-get autoremove
-
-echo "Installing Janus VIM extensions https://github.com/carlhuda/janus"
-curl -Lo- https://bit.ly/janus-bootstrap | bash 
-
-echo "Installing oh-my-zsh"
-curl -L http://install.ohmyz.sh | sh 
-
-echo "talapus zsh theme copied to ~/.oh-my-zsh/themes"
-cp -v talapus.zsh-theme ~/.oh-my-zsh/themes
-
-echo "git setup"
-git config --global user.email "noumenaut@gmail.com"
-git config --global user.name "Talapus"
-git config credential.helper cache
 
 # first launch of zsh. Create the default files, etc. 
 zsh
