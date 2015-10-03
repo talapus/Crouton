@@ -55,6 +55,7 @@ echo "git setup"
 git config --global user.email "noumenaut@gmail.com"
 git config --global user.name "Talapus"
 git config credential.helper cache
+git config --global credential.helper "cache --timeout=3600"
 
 echo "All done. Exiting".
 sleep 1
