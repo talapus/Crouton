@@ -15,11 +15,11 @@ developer mode, or visa versa.
    pressing CTRL+ALT+T. 
 
 4. In the crosh shell, enter the command:
-    > shell
+    ```> shell```
 
     This launches a bash shell with more utilities available to it.
 enter the command:
-    $ ~/Download/crouton -t cli-extra
+    ```$ ~/Download/crouton -t cli-extra```
 
 4. In the bash 
 
