@@ -4,7 +4,7 @@
 Steps:
 
 1. Seriously consider backing up your stock operating system. It only
-   takes a few minutes and a tiny USB stick. Instructions can be found here: http://instructions
+   takes a few minutes and a tiny USB stick. Instructions can be found here: https://support.google.com/chromebook/answer/6002417?hl=en
 
 2. Put your device into developer mode. Not this will erase everything
    and reset your machine as if it were new. So make sure you don't have
