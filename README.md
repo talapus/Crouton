@@ -22,12 +22,14 @@ developer mode, or visa versa.
 1.  This launches a bash shell with more utilities available to it.
 enter the command:
     ```
-    $ ~/Download/crouton -t cli-extra
+    $ ~/Download/crouton -r trusty -t cli-extra
     ```
 
-1. In the bash 
+1. To see a list of install targets, use the following command:
 
-crouton -r list
+    ```
+    crouton -r list
+    ```
 
 
 https://github.com/dnschneid/crouton
