@@ -1,8 +1,10 @@
 # i=1; while [ $i -lt $1 ]; do $2; i=$(( $i + 1 )); done
 
-i=0; 
+i=0;
 while [ $i -lt $1 ];
-do 
+do
+  loopNumber=`node -e "console.log('[' + ($1 - $i) + ']')"`
+  echo "$loopNumber`date +'%s'` $2 $3 $4"
    iteration=$(( $i + 1 ));
    $2 $3 $4 $5 $6 $7 $8 $9;
    i=$(( $i + 1 ));

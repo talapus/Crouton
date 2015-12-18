@@ -1,5 +1,0 @@
-perl -lne 'm#: (\d+):\d+;(.+)# && printf "%s :: %s\n",scalar localtime $1,$2' /home/evan/.zsh_history
-
-# original - worked only on the command line - but not in a script
-# perl -lne 'm#: (\d+):\d+;(.+)# && printf "%s :: %s\n",scalar localtime $1,$2' $HISTFILE
-

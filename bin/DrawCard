@@ -1,0 +1,48 @@
+#!/usr/bin/env node
+
+// Displays a random 5-card poker hand, by "dealing out"
+// five random cards from a deck. The first card (at index 0)
+// is the ace of spades (A♠), and the last (at index #51) is the
+// king of clubs (K♣).
+
+var handSize = process.argv[2];
+
+if (!handSize) {
+  handSize = 1
+}
+
+// Shuffle
+var deck = [];
+"♠♡♢♣".split("").forEach(function (suit) {
+    "A 2 3 4 5 6 7 8 9 10 J Q K".split(" ").forEach(function (rank) {
+        deck.push(rank + suit);
+    });
+});
+
+// Deal
+var hand = [];
+for (var i = 0; i < handSize; i += 1) {
+    hand.push(deck.splice(Math.floor(Math.random() * deck.length), 1));
+}
+
+// Show
+console.log(hand.join("  "));
+
+/*
+
+┌─┐  ┌─┐  ┌─┐  ┌─┐  ┌─┐
+4 ♢  Q ♡  K ♠  10♣   J
+└─┘  └─┘  └─┘  └─┘  └─┘
+
+┌──┐ ┌──┐ ┌──┐ ┌──┐ ┌──┐
+│Q♡│ │Q♡│ │Q♡│ │Q♡│ │Q♡│
+└──┘ └──┘ └──┘ └──┘ └──┘
+
+┌──────────────┬──────────────┐
+│ TH 1 lable   │ TH 2 lable   │
+├──────────────┼──────────────┤
+│ First value  │ Second value │
+├──────────────┼──────────────┤
+│ First value  │ Second value │
+└──────────────┴──────────────┘
+*/
