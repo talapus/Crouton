@@ -1,6 +1,0 @@
-git config --global user.email "noumenaut@gmail.com"
-git config --global user.name "Talapus"
-git config credential.helper cache
-git clone https://github.com/talapus/LostColony.git
-git clone https://github.com/talapus/Python_lessons.git
-git clone https://github.com/talapus/bin.git

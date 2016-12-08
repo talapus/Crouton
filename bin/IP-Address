@@ -1,5 +1,0 @@
-#clear; echo; ifconfig | grep -i inet | grep -i broad | awk '{printf $2}'; echo; echo
-#echo
-#printf "\tNetwork Info: "
-#uname -n
-/sbin/ifconfig | grep -i inet | grep -v inet6 | grep -v 127 | awk {'print $2'}
